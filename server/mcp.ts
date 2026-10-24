@@ -420,19 +420,6 @@ export async function createMealPlan(request: PlanRequest): Promise<PlanResponse
   }
 
   const plans = buildMealPlans(candidates, request);
-  if (plans.length === 0) {
-    console.warn(
-      "No plans generated",
-      JSON.stringify(
-        candidates.slice(0, 12).map((item) => ({
-          name: item.name,
-          price: item.price,
-          role: item.role,
-          calories: item.nutrition.energyKcal,
-        })),
-      ),
-    );
-  }
   const coupons =
     couponResult.status === "fulfilled" ? parseCoupons(couponResult.value) : demoCoupons;
   const campaigns =
