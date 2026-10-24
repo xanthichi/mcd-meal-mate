@@ -1,12 +1,17 @@
 # M餐搭子
 
 [![CI](https://github.com/xanthichi/mcd-meal-mate/actions/workflows/ci.yml/badge.svg)](https://github.com/xanthichi/mcd-meal-mate/actions/workflows/ci.yml)
+[![在线演示](https://img.shields.io/badge/在线演示-GitHub%20Pages-d92d20)](https://xanthichi.github.io/mcd-meal-mate/)
 
 > 不猜菜单，认真算一餐。
 
 **M餐搭子**是一个基于麦当劳 MCP 实时数据的智能搭餐 Skill。输入城市、地标、预算、热量上限和蛋白质目标，它会从当前门店的真实菜单里选出三套可执行的组合，并把每一餐的价格、热量、蛋白质和 MCP 调用链一起摊开给你看。
 
 本项目参加 **2026 麦当劳程序员创意开发大赛**，为非麦当劳官方产品。
+
+**在线体验：** <https://xanthichi.github.io/mcd-meal-mate/>
+
+GitHub Pages 版本是纯前端演示版，支持完整条件调整与搭餐计算，使用脱敏菜单快照；实时 MCP 版本需要运行仓库内的 Node 服务。
 
 ![M餐搭子桌面预览](./docs/preview.png)
 

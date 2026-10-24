@@ -26,6 +26,10 @@ import type {
   Preference,
   ToolTrace,
 } from "../shared/types";
+import { fetchPlan } from "./api";
+import { createStaticDemoResponse } from "./static-demo";
+
+const isStaticDemo = import.meta.env.VITE_STATIC_DEMO === "true";
 
 const preferences: Array<{
   id: Preference;
@@ -61,16 +65,9 @@ function App() {
     setLoading(true);
     setError("");
     try {
-      const response = await fetch("/api/plan", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(nextForm),
-      });
-      const payload = (await response.json()) as PlanResponse | { error?: string };
-      if (!response.ok) {
-        throw new Error("error" in payload ? payload.error || "搭餐失败" : "搭餐失败");
-      }
-      const planResponse = payload as PlanResponse;
+      const planResponse = isStaticDemo
+        ? createStaticDemoResponse(nextForm)
+        : await fetchPlan(nextForm);
       if (planResponse.plans.length === 0) {
         throw new Error("这个预算下没有找到合适组合，试着放宽预算或热量目标。");
       }

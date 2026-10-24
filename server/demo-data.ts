@@ -296,19 +296,17 @@ export const demoMeals: RawMeal[] = [
 export const demoCoupons: CouponInfo[] = [
   {
     name: "免费脆薯饼",
-    image: "https://img.mcd.cn/cms/images/858839306b7cca66.png",
+    image: "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_521741_320.png",
     label: "可领取",
   },
   {
     name: "11.9元麦辣鸡腿堡",
-    image:
-      "https://mcd-portal-prod-cos1-1300270282.cos.ap-shanghai.myqcloud.com/campaign/prod/campaign-offer/coupon/428e50a23a7243b497691f44f55df3a6/%E9%BA%A6%E8%BE%A3%E9%B8%A1%E8%85%BF%E5%A0%A1600x600.png",
+    image: "https://menu-img.mcd.cn/pcm/prod/menu/20260325/product/MS_1440_320.png",
     label: "可领取",
   },
   {
     name: "19.9元王牌炸鸡任选2",
-    image:
-      "https://mcd-portal-prod-cos1-1300270282.cos.ap-shanghai.myqcloud.com/campaign/prod/campaign-offer/coupon/3d8aad332ed94030aca790068eb56054/%E7%8E%8B%E7%89%8C%E7%82%B8%E9%B8%A1%E4%BB%BB%E9%80%892%20600x600.png",
+    image: "https://menu-img.mcd.cn/pcm/prod/menu/20260325/product/MS_G1700_320.png",
     label: "可领取",
   },
 ];
