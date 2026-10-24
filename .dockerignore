@@ -1,0 +1,8 @@
+node_modules
+dist
+dist-server
+.env
+.git
+output
+.playwright-cli
+npm-debug.log

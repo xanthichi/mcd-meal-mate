@@ -1,0 +1,14 @@
+node_modules/
+dist/
+dist-server/
+.env
+.env.local
+coverage/
+*.log
+playwright-report/
+test-results/
+screenshots/
+output/
+.playwright-cli/
+.DS_Store
+Thumbs.db
